@@ -1,0 +1,9 @@
+@import './colors.scss';
+
+.container {
+  max-width: 1440px;
+  @media screen and (max-width: 640px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
