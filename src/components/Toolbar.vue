@@ -26,6 +26,7 @@
         :key="index"
         link
         class="mb-4"
+        @click="$router.push(item.path)"
       >
         <v-list-item-content class="d-flex justify-space-between">
           <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -42,9 +43,8 @@ export default {
     return {
       drawer: false,
       items: [
-        { title: 'Dashboard', icon: 'mdi-home' },
-        { title: 'Player list', icon: 'mdi-disc-player' },
-        { title: 'Contact', icon: 'mdi-email' },
+        { title: 'Dashboard', icon: 'mdi-home', path: '/' },
+        { title: 'Player', icon: 'mdi-disc-player', path: '/player' },
       ],
     };
   },

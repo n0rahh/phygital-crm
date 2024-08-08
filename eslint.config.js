@@ -36,6 +36,12 @@ export default [
           ignores: [],
         },
       ],
+      'prettier/prettier': [
+        'error',
+        {
+          endOfLine: 'auto',
+        },
+      ],
     },
   },
   prettierConfig,
